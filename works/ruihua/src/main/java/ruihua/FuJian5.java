@@ -15,7 +15,7 @@ public class FuJian5 {
 	Map<String, String> map=null;
 	XSSFSheet sheet=null;
 	public FuJian5(String sheetname) throws Exception {
-		XSSFWorkbook book=new XSSFWorkbook(new FileInputStream(new File("C:\\Users\\16603\\Desktop\\¸½¼þ5£º¼ì²éÓ³Éä.xlsx")));
+		XSSFWorkbook book=new XSSFWorkbook(new FileInputStream(new File("C:\\Users\\16603\\Desktop\\é™„ä»¶5ï¼šæ£€æŸ¥æ˜ å°„.xlsx")));
 		sheet=book.getSheet(sheetname);
 		
 	}

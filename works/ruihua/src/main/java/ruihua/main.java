@@ -11,9 +11,14 @@ import java.util.regex.Pattern;
 
 public class main {
 
-	public static void main(String[] args) throws IOException {
-		jiaoyan();
+	public static void main(String[] args) {
 		
+		try {
+			excel();
+		} catch (Exception e) {
+			
+			e.printStackTrace();
+		}
 	}
 	public static void jiaoyan() throws IOException {
 		BaoWen bw=new BaoWen();
@@ -70,7 +75,7 @@ public class main {
 	}
 	
 	public static void excel() throws Exception {
-		FuJian5 fj=new FuJian5("���ֶ����");
+		FuJian5 fj=new FuJian5("险种定义表");
 		System.out.println(fj.getexcelrow());
 		Map<String, String> map = fj.getcolumnnull();
 		Iterator<String> it=map.keySet().iterator();
