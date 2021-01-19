@@ -1,4 +1,4 @@
-package ruihua;
+package ruihuaImpl;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Collection;
 
 public class BaoWen {
-	BufferedReader bdr=null;
+	 
 	
 	
 	public File[] readfile(String filepath) {
@@ -19,7 +19,7 @@ public class BaoWen {
 		return filename;
 	}
 	public String[] getfilevalue(File file) throws IOException {
-		bdr=new BufferedReader(new FileReader(file));
+		BufferedReader bdr=new BufferedReader(new FileReader(file));
 		Collection<String> col=new ArrayList<String>();
 		String value="";
 		while(value!=null) {
@@ -29,6 +29,7 @@ public class BaoWen {
 			}
 			
 		}
+		bdr.close();
 		Object[] arr= col.toArray();
 		String[] arr1=new String[arr.length];
 		for(int i=0;i<arr.length;i++) {
@@ -41,7 +42,5 @@ public class BaoWen {
 	
 	
 	
-	public void close() throws IOException {
-		bdr.close();
-	}
+	
 }

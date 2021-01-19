@@ -1,4 +1,4 @@
-package ruihua;
+package ruihuaImpl;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
