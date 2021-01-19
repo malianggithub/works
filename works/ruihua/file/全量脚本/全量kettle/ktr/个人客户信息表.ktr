@@ -1,0 +1,1483 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>个人客户信息表</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <size_limit_lines/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject/>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject/>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <interval/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection/>
+        <schema/>
+        <table/>
+        <timeout_days/>
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>maliang</created_user>
+    <created_date>2020/12/09 18:13:53.000</created_date>
+    <modified_user>maliang</modified_user>
+    <modified_date>2020/12/10 19:28:47.000</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>pro</name>
+    <server>10.98.1.8</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>lis</database>
+    <port>3306</port>
+    <username>eastread</username>
+    <password>Encrypted 2be98afc86aa7b9b78f15b723c4bcfff5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>sit</name>
+    <server>10.98.6.16</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>east</database>
+    <port>3306</port>
+    <username>east</username>
+    <password>Encrypted 2be98afc86aa784d2991a8551dabcb8f5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>3306</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>STREAM_RESULTS</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>个人客户信息表输入</from>
+      <to>字段选择</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>字段选择</from>
+      <to>表输出</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>个人客户信息表输入</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>pro</connection>
+    <sql>--  个险
+-- 个人客户信息
+SELECT '${data_date}' DIS_DATA_DATE,
+a.AppntNo AS KHBH,
+--	客户编号
+       a.AppntName AS XM,
+	   -- 姓名
+       (case (SELECT CodeName FROM LDCode WHERE CodeType = 'Sex' AND Code = a.AppntSex) 
+				when '男' then '男性'
+				when '女' then '女性'
+				else '未说明的性别' end ) as XB,
+	   -- 性别
+       a.AppntBirthday AS CSRQ,
+	   -- 出生日期
+       (SELECT Code FROM LDCode WHERE CodeType = 'IdType' AND Code = a.IdType) AS ZJLX,
+	   -- 证件类型
+       a.IDNo AS ZJHM,
+	   -- 证件号码
+       '' AS ZJYXQQ,
+	   -- 证件有效起期
+       IF(a.ISLongValid = '1','9999-12-31',a.IDExpDate) AS ZJYXZQ,
+	   -- 证件有效止期
+       ifnull(a.OccupationCode,'未记录') AS ZY,
+	   -- 20201224 增加未记录选项
+	   -- 职业
+       ifnull((SELECT Code FROM LDCode WHERE CodeType = 'NativePlace' AND Code = a.NativePlace),'未记录') AS GJ, 
+	   -- 20201224 增加未记录选项
+	   -- 国籍
+       ifnull((SELECT Code FROM LDCode WHERE CodeType = 'Marriage' AND Code = a.Marriage),'未说明的婚姻状况') AS HYZK, 
+	   -- 20201224 增加未说明的婚姻状况选项
+	   -- 婚姻状况 ',
+       b.Phone AS YDDH,
+	   -- 移动电话
+       b.Mobile AS GDDH,
+	   -- 固定电话
+       b.Email AS DZYX,
+	   -- 电子邮箱
+       '' AS XL,
+	   -- 学历
+       a.Pretax AS GRNSR,
+	   -- 个人年收入
+       IFNULL(b.Province,'000000') AS DZSZS,
+	   -- 地址所在省
+       IFNULL(b.City,'000000') AS DZSZDS,
+	   -- 地址所在地市
+       IFNULL(b.County,'000000') AS DZSZQX,
+	   -- 地址所在区县
+        IFNULL(b.PostalAddress,'000000') AS JD
+FROM LCAppnt a,LCAddress b
+WHERE a.AppntNo = b.CustomerNo AND a.GrpContNo = '00000000000000000000'
+  AND a.AddressNo = b.AddressNo
+ -- AND a.MakeDate &lt; '2021-01-01'
+ -- AND b.MakeDate &lt; '2021-01-01'
+  AND a.contno =(SELECT
+		max(b.contno)
+	FROM
+		lcappnt b,lccont c
+	WHERE
+		b.appntno = a.AppntNo
+	--	and b.appntno = c.AppntNo 
+		and c.contno = b.contno
+		and  c.signdate &lt; '2021-01-01'
+	-- AND a.makedate &lt; '2021-01-01'
+)
+-- 20201224 增加
+/* AND NOT EXISTS (
+	SELECT
+		1
+	FROM
+		lcinsured
+	WHERE
+		insuredno = a.appntno
+) */ -- 20210108 修改
+AND NOT EXISTS (
+	SELECT
+		1
+	FROM
+		lcinsured lc
+	WHERE
+		lc.insuredno = a.appntno
+		and lc.contno in 
+		(select  cont.contno from   lccont cont where cont.contno=lc.contno and cont.signdate&lt;'2021-01-01')
+)
+-- 20201224 增加
+UNION
+SELECT '${data_date}' DIS_DATA_DATE,
+a.InsuredNo AS KHBH,
+-- 客户编号
+       a.Name AS XM,
+	   -- 姓名
+       (case (SELECT CodeName FROM LDCode WHERE CodeType = 'Sex' AND Code = a.Sex) 
+				when '男' then '男性'
+				when '女' then '女性'
+				else '未说明的性别' end ) as XB,
+	   -- 性别
+       a.Birthday AS CSRQ,
+	   -- 出生日期
+       (SELECT CodeName FROM LDCode WHERE CodeType = 'IdType' AND Code = a.IdType) AS ZJLX,
+	   -- 证件类型
+       a.IDNo AS ZJHM,
+	   -- 证件号码
+       '' AS ZJYXQQ,
+	   -- 证件有效起期
+       IF(a.ISLongValid = '1','9999-12-31',a.IDExpDate) AS ZJYXZQ,
+	   -- 证件有效止期
+       IFNULL(a.OccupationCode,'未记录') AS ZY,
+	    -- 20201224 增加未记录选项
+	   -- 职业
+       IFNULL((SELECT CodeName FROM LDCode WHERE CodeType = 'NativePlace' AND Code = a.NativePlace),'未记录') AS GJ,
+	    -- 20201224 增加未记录选项
+	   -- 国籍
+       IFNULL((SELECT CodeName FROM LDCode WHERE CodeType = 'Marriage' AND Code = a.Marriage),'未说明的婚姻状况') AS HYZK,
+	    -- 20201224 增加未说明的婚姻状况选项
+	   -- 婚姻状况
+       b.Phone AS YDDH,
+	   -- 移动电话
+       b.Mobile AS GDDH,
+	   -- 固定电话
+       b.Email AS DZYX,
+	   -- 电子邮箱
+       '' AS XL,
+	   -- 学历
+       a.Pretax AS GRNSR,
+	   -- 个人年收入
+       IFNULL(b.Province,'000000') AS DZSZS,
+	   -- 地址所在省
+       IFNULL(b.City,'000000') AS DZSZDS,
+	   -- 地址所在地市
+       IFNULL(b.County,'000000') AS DZSZQX,
+	   -- 地址所在区县
+       IFNULL(b.PostalAddress,'000000') AS JD
+FROM LCInsured a,LCAddress b
+WHERE a.InsuredNo = b.CustomerNo AND a.GrpContNo = '00000000000000000000'
+  AND a.AddressNo = b.AddressNo
+  -- AND a.MakeDate &lt; '2021-01-01'
+  -- AND b.MakeDate &lt; '2021-01-01'
+  AND a.contno = (  
+	SELECT
+		max(c.contno)
+	FROM
+		lcinsured c,lccont b
+	WHERE
+		c.insuredno = a.InsuredNo
+		and b.contno = c.contno
+	--	and c.insuredno = b.insuredno
+		and  b.signdate &lt; '2021-01-01'
+	-- AND a.makedate &lt; '2021-01-01'
+)
+
+union all -- 分割
+
+select DISTINCT '${data_date}' DIS_DATA_DATE,
+insuredno AS KHBH,
+--	客户编号
+name AS XM,
+	   -- 姓名
+(case when sex='1' then '女性' when sex='0' then '男性' else '未说明的性别' end ) AS XB,
+	   -- 性别
+birthday AS CSRQ,
+	   -- 出生日期
+(select code from ldcode where codetype='idtype' and code=a.idtype) AS ZJLX,
+	   -- 证件类型
+idno AS ZJHM,
+	   -- 证件号码
+'' AS ZJYXQQ,
+	   -- 证件有效起期
+(case when a.IsLongValid  is not null then '9999-12-31' else a.IDExpDate end) AS ZJYXZQ,
+	   -- 证件有效止期
+ifnull((select  occupationcode  from ldoccupation where occupationcode=a.occupationcode),'未记录') AS ZY, -- 20201224职业增加未记录判断
+	   -- 职业
+ifnull((select code from ldcode where codetype='nativeplace' and  code=a.nativeplace),'未记录') AS GJ, -- 20201224国籍增加未记录判断
+	   -- 国籍
+#团险被保人客户系统不录
+'未说明的婚姻状况' AS HYZK,
+	   -- 婚姻状况
+(select b.Mobile1 from  LCCustomerContactInfo b where b.policyno=a.grpcontno and b.CustomerNo=a.insuredno limit 1) AS YDDH,
+	   -- 移动电话
+(select b.Phone from  LCCustomerContactInfo b where b.policyno=a.grpcontno and b.CustomerNo=a.insuredno limit 1) AS GDDH,
+	   -- 固定电话
+(select b.EMail1 from LCCustomerContactInfo b where b.policyno=a.grpcontno and b.CustomerNo=a.insuredno limit 1) AS DZYX,
+	   -- 电子邮箱
+#团险客户系统不录学历
+'' AS XL,
+	   -- 学历
+ifnull(Salary*12,'') AS GRNSR,
+	   -- 个人年收入
+ifnull((select b.province from LCCustomerContactInfo b where  b.policyno=a.grpcontno and b.CustomerNo=a.insuredno limit 1),'000000') AS DZSZS, -- 20201224地址所在省增加未记录判断
+	   -- 地址所在省
+ifnull((select b.city from LCCustomerContactInfo b where  b.policyno=a.grpcontno and b.CustomerNo=a.insuredno limit 1),'000000')AS DZSZDS, -- 20201224地址所在地市增加未记录判断
+	   -- 地址所在地市
+ifnull((select b.county from LCCustomerContactInfo b where   b.policyno=a.grpcontno and b.CustomerNo=a.insuredno limit 1),'000000') AS DZSZQX, -- 20201224地址所在区县增加未记录判断
+	   -- 地址所在区县
+ifnull((select PostalAddress from   LCCustomerContactInfo where policyno=a.grpcontno and CustomerNo=a.insuredno limit 1),'000000') AS JD
+	   -- 街道  -- 20201224街道增加未记录判断
+from lcinsured a where a.grpcontno != '00000000000000000000'
+-- and a.makedate&lt;'2021-01-01'
+and a.contno=(select  max(b.contno) from lcinsured b where  b.insuredno=a.insuredno and grpcontno!='00000000000000000000' and makedate&lt;'2021-01-01')
+
+/* 20210101  增加排除不在集中采集范围内的数据  */
+-- and  not EXISTS(select 1 from lcinsured where insuredno=a.insuredno and grpcontno='00000000000000000000')
+-- and  a.contno=(select  max(b.contno) from lcinsured b where  b.insuredno=a.insuredno and grpcontno!='00000000000000000000')  
+-- 20201224增加
+-- and  not EXISTS(select 1 from lcinsured where insuredno=a.insuredno and grpcontno='00000000000000000000')
+/* 20210108  增加判断  */
+and  not EXISTS(select 1 from lcinsured lc where lc.insuredno=a.insuredno and lc.grpcontno='00000000000000000000' 
+ and lc.contno in (select  cont.contno from   lccont cont where cont.contno=lc.contno and cont.signdate&lt;'2021-01-01')
+
+)
+
+
+
+
+
+
+</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cached_row_meta_active>N</cached_row_meta_active>
+    <row-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>KHBH</name>
+        <length>24</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>KHBH</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>XM</name>
+        <length>200</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>XM</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>XB</name>
+        <length>6</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>XB</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>CSRQ</name>
+        <length>10</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>CSRQ</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ZJLX</name>
+        <length>300</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>ZJLX</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ZJHM</name>
+        <length>30</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>ZJHM</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ZJYXQQ</name>
+        <length>0</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>ZJYXQQ</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ZJYXZQ</name>
+        <length>10</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>ZJYXZQ</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>ZY</name>
+        <length>300</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>ZY</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>GJ</name>
+        <length>300</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>GJ</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>HYZK</name>
+        <length>300</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>HYZK</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>YDDH</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>YDDH</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>GDDH</name>
+        <length>20</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>GDDH</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DZYX</name>
+        <length>60</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>DZYX</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>XL</name>
+        <length>0</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>XL</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>GRNSR</name>
+        <length>16</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>GRNSR</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DZSZS</name>
+        <length>100</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>DZSZS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DZSZDS</name>
+        <length>100</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>DZSZDS</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>DZSZQX</name>
+        <length>100</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>DZSZQX</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+      <value-meta>
+        <type>String</type>
+        <storagetype>normal</storagetype>
+        <name>JD</name>
+        <length>300</length>
+        <precision>-1</precision>
+        <origin>个人客户信息表输入</origin>
+        <comments>JD</comments>
+        <conversion_Mask/>
+        <decimal_symbol>.</decimal_symbol>
+        <grouping_symbol>,</grouping_symbol>
+        <currency_symbol/>
+        <trim_type>none</trim_type>
+        <case_insensitive>N</case_insensitive>
+        <collator_disabled>Y</collator_disabled>
+        <collator_strength>0</collator_strength>
+        <sort_descending>N</sort_descending>
+        <output_padding>N</output_padding>
+        <date_format_lenient>N</date_format_lenient>
+        <date_format_locale>zh_CN</date_format_locale>
+        <date_format_timezone>Asia/Shanghai</date_format_timezone>
+        <lenient_string_to_number>N</lenient_string_to_number>
+      </value-meta>
+    </row-meta>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>160</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>字段选择</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <fields>
+      <select_unspecified>N</select_unspecified>
+      <meta>
+        <name>CSRQ</name>
+        <rename>CSRQ</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy-MM-dd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>ZJYXQQ</name>
+        <rename>ZJYXQQ</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy-MM-dd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+      <meta>
+        <name>ZJYXZQ</name>
+        <rename>ZJYXZQ</rename>
+        <type>String</type>
+        <length>10</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy-MM-dd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>336</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>表输出</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name/>
+    </partitioning>
+    <connection>sit</connection>
+    <schema>east</schema>
+    <table>s_core_grkhxxb</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+      <field>
+        <column_name>DIS_DATA_DATE</column_name>
+        <stream_name>DIS_DATA_DATE</stream_name>
+      </field>
+      <field>
+        <column_name>KHBH</column_name>
+        <stream_name>KHBH</stream_name>
+      </field>
+      <field>
+        <column_name>XM</column_name>
+        <stream_name>XM</stream_name>
+      </field>
+      <field>
+        <column_name>XB</column_name>
+        <stream_name>XB</stream_name>
+      </field>
+      <field>
+        <column_name>CSRQ</column_name>
+        <stream_name>CSRQ</stream_name>
+      </field>
+      <field>
+        <column_name>ZJLX</column_name>
+        <stream_name>ZJLX</stream_name>
+      </field>
+      <field>
+        <column_name>ZJHM</column_name>
+        <stream_name>ZJHM</stream_name>
+      </field>
+      <field>
+        <column_name>ZJYXQQ</column_name>
+        <stream_name>ZJYXQQ</stream_name>
+      </field>
+      <field>
+        <column_name>ZJYXZQ</column_name>
+        <stream_name>ZJYXZQ</stream_name>
+      </field>
+      <field>
+        <column_name>ZY</column_name>
+        <stream_name>ZY</stream_name>
+      </field>
+      <field>
+        <column_name>GJ</column_name>
+        <stream_name>GJ</stream_name>
+      </field>
+      <field>
+        <column_name>HYZK</column_name>
+        <stream_name>HYZK</stream_name>
+      </field>
+      <field>
+        <column_name>YDDH</column_name>
+        <stream_name>YDDH</stream_name>
+      </field>
+      <field>
+        <column_name>GDDH</column_name>
+        <stream_name>GDDH</stream_name>
+      </field>
+      <field>
+        <column_name>DZYX</column_name>
+        <stream_name>DZYX</stream_name>
+      </field>
+      <field>
+        <column_name>XL</column_name>
+        <stream_name>XL</stream_name>
+      </field>
+      <field>
+        <column_name>GRNSR</column_name>
+        <stream_name>GRNSR</stream_name>
+      </field>
+      <field>
+        <column_name>DZSZS</column_name>
+        <stream_name>DZSZS</stream_name>
+      </field>
+      <field>
+        <column_name>DZSZDS</column_name>
+        <stream_name>DZSZDS</stream_name>
+      </field>
+      <field>
+        <column_name>DZSZQX</column_name>
+        <stream_name>DZSZQX</stream_name>
+      </field>
+      <field>
+        <column_name>JD</column_name>
+        <stream_name>JD</stream_name>
+      </field>
+    </fields>
+    <attributes/>
+    <cluster_schema/>
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>512</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+  <attributes/>
+</transformation>
