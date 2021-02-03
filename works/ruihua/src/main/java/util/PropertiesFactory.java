@@ -12,7 +12,7 @@ public class PropertiesFactory {
 	
 	public static String getValue(String key) {
 		try {
-			pf.load(new  FileReader(new File("C:\\Users\\16603\\git\\works\\works\\ruihua\\file\\file\\jiaoyanconfig.properties")));
+			pf.load(new  FileReader(new File("C:\\Users\\16603\\git\\works\\works\\works\\ruihua\\file\\file\\jiaoyanconfig.properties")));
 			value=(String) pf.get(key);
 		} catch (FileNotFoundException e) {
 			

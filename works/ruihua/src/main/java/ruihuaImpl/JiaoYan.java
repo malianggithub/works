@@ -131,7 +131,7 @@ public class JiaoYan implements ruihuaInterface.JiaoYan,Runnable {
 	public void files() {
 		BaoWen bw=new BaoWen();
 		String filepath=PropertiesFactory.getValue("报文路径");
-		//System.out.println(filepath);
+		System.out.println(filepath);
 		File[] file=null;
 		file=bw.readfile(filepath);
 		
